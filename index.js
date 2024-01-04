@@ -16,21 +16,8 @@ async function main() {
     temperature: 0.5, // Optional. Value `0.0` always uses the highest-probability result.
     candidateCount: 1, // Optional. The number of candidate results to generate.
     prompt: {
-      // optional, preamble context to prime responses
-    //   context: "Respond to all questions with a rhyming poem.",
-      // Optional. Examples for further fine-tuning of responses.
-//       examples: [
-//         {
-//           input: { content: "What is the capital of California?" },
-//           output: {
-//             content:
-//               `If the capital of California is what you seek,
-// Sacramento is where you ought to peek.`,
-//           },
-//         },
-    //   ],
       // Required. Alternating prompt/response messages.
-      messages: [{ content: "How can I manage my diabetes?" }],
+      messages: [{ content: "How can I manage healthy lifestyle?" }],
     },
   });
 
